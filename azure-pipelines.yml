@@ -4,9 +4,9 @@ trigger:
 - none
 
 variables:
-  service-connection: 'ml-ops-connection' # replace with your service connection name
-  resource-group: 'ml-ops-wg' # replace with your resource group name
-  workspace: 'ml-ops-ws' # replace with your workspace name
+  service-connection: 'mlops-con' # replace with your service connection name
+  resource-group: 'mlops-rg' # replace with your resource group name
+  workspace: 'mlops-ws' # replace with your workspace name
 
 jobs:
 - job: SubmitAzureMLJob
