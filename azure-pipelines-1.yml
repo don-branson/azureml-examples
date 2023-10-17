@@ -47,7 +47,6 @@ jobs:
 
       # Set output variable for next task
       echo "##vso[task.setvariable variable=JOB_NAME;]${JOB_NAME}"
-      echo "##vso[task.setvariable variable=JOB_NAME;isOutput=true;]${JOB_NAME}"
 
       # Get a bearer token to authenticate the request in the next job
       export aadToken=$(az account get-access-token --resource=https://management.azure.com --query accessToken -o tsv)
